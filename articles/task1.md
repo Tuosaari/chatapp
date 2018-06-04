@@ -17,7 +17,7 @@ Data access layer is described more in detail in storage section.
 
 ## Storage
 
-Using Azure storage for chat message persistence was required by the task. Table storage was chosen over blob storage due to it having crude indexing capabilities which are enough for the chat system. "Inversed" timestamp (long.maxvalue - timestamp.ticks) row key for chat messages is used to guarantee messages are fetched in order automatically. Additionaly user and message models are simple enough to be stored as TableEntity without any custom functionality. 
+Using Azure storage for chat message persistence was required by the task. Table storage was chosen over blob storage due to it having crude indexing capabilities which are enough for the chat system. "Inversed" timestamp (DateTime.MaxValue.Ticks - timestamp.Ticks) partition key for chat messages is used to guarantee messages are fetched in order automatically. Additionaly user and message models are simple enough to be stored as TableEntity without any custom functionality. 
 
 Table storage access is hidden behind repository interfaces used in application layer. Both active users and messages have a simple repository interface for functionality required by the system. If channels, authentication and authorization were needed, these would probably be hidden behind a service layer which in turn would be used by application layer. A simple generic table client was implemented for basic CRUD operations against a single table. Both user and message repositories use that client. This allowed repositories to be a bit more testable and the more "complex" table storage related code was reused.
 
@@ -29,7 +29,7 @@ Front end is based loosely on ASP.NET Core React template with Webpack for build
 
 For UI styling, Bootstrap 4 was chosen. Only because I've been using it recently. Definetly not the best/prettiest toolkit to use, but saved me some time.
 
-In general, having had a bit more time, front-end would/should have seen more love.
+In general, having had a bit more time, front-end would/should have seen far more love.
 
 ## Documentation
 

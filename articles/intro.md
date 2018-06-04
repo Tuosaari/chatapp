@@ -8,3 +8,5 @@ Test was split to 4 tasks. For each of them, a separate article exists, explaini
 [Task 2](task2.md)
 
 [Task 3](task3.md)
+
+[Task 4](task4.md)

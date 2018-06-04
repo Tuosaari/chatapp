@@ -1,6 +1,6 @@
 {
   "homepages": [],
-  "source_base_path": "C:/Repos/ChatApp",
+  "source_base_path": "C:/Users/tuoma/Source/Repos/chatapp",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -9,10 +9,10 @@
       "output": {
         ".html": {
           "relative_path": "README.html",
-          "hash": "XLpIZpxCkXaKUFZrSIq+Ww=="
+          "hash": "FlAgi3kFVJ5ZpWGhwfAqDg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -21,10 +21,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ChatApp.Configuration.DependencyConfiguration.html",
-          "hash": "TPvUUV8P52T6p0d5w+03WQ=="
+          "hash": "SFLfu96GOn6t/Ist5V/T/w=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -33,10 +33,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ChatApp.Configuration.ServiceInitialization.html",
-          "hash": "3svLS4XAY/jQNl6XOoUdag=="
+          "hash": "4O4/Ui72q+QK130PswBvbg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -48,7 +48,7 @@
           "hash": "meqAcmTXx6fqSOJ9l19hhQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -57,10 +57,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ChatApp.Controllers.Api.ActiveUsersController.html",
-          "hash": "fWADWOiPQOJecpzkQ6Vqmw=="
+          "hash": "tHPAtdGHEJVyv2g/yZhgBA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -69,10 +69,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ChatApp.Controllers.Api.MessageController.html",
-          "hash": "rrECwfCUNvsXTmQSEtlldg=="
+          "hash": "Wsqd+r/xJdu2Jp53NXXgeg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -84,7 +84,7 @@
           "hash": "r3ZKeThFf3I5x7iNUYXy9w=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -93,10 +93,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ChatApp.Controllers.HomeController.html",
-          "hash": "Eynbl+gvt4mZWwOZyh4qiw=="
+          "hash": "V0MIdxg5rIE9QZo7QCzdig=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -108,7 +108,7 @@
           "hash": "p0h3zuMmPMYr3bn+28FwFQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -117,10 +117,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ChatApp.Exceptions.ChatHubException.html",
-          "hash": "+Pac6Iqcf34I+S7VQUzrQA=="
+          "hash": "2FtWTjIqbIQT8sRIJYjvHg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -132,7 +132,7 @@
           "hash": "8cWeS7wShhk6sNNwHOgF/A=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -141,10 +141,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ChatApp.Hubs.ChatHub.html",
-          "hash": "1nQYjThfaLX+0RgaaIYPmg=="
+          "hash": "EOQQ9B4KHZDRRT/ceGPV+A=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -156,7 +156,7 @@
           "hash": "W0YGQDJtMe+OMWV5zhFguA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -165,10 +165,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ChatApp.Lib.Azure.Storage.ITableStorageClient.html",
-          "hash": "hU2w9mvCHAC2rFKtr7OIXw=="
+          "hash": "PhnPz7MzZ6X9lvIcw8mdHw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -177,10 +177,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ChatApp.Lib.Azure.Storage.TableStorageClient.html",
-          "hash": "gWTNdi7EY/SmYhLIqjEMHg=="
+          "hash": "Ox4TsYOvn+OdvWctL7VjRg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -189,10 +189,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ChatApp.Lib.Azure.Storage.TableStorageClientOptions.html",
-          "hash": "ICLPANPGtqZADxyM7F5V5A=="
+          "hash": "7v+AH7XkMfROPp/+f5OQNw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -204,7 +204,7 @@
           "hash": "yyhgvzFiBp0fcikEGA0dEQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -213,10 +213,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ChatApp.Lib.General.IInitializable.html",
-          "hash": "FpYQhVl6rKgSoyWvu4TwqQ=="
+          "hash": "1i8YeNnRiiCnS+FXYgjIYA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -228,7 +228,7 @@
           "hash": "QugpkD5jE6koLsyXeF+6lg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -237,10 +237,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ChatApp.Lib.Messaging.Model.ChatMessage.html",
-          "hash": "OSRPMQ7NhW4KrlrSXSEU1w=="
+          "hash": "f+aAERmaKjDE2QGrkktWsw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -252,7 +252,7 @@
           "hash": "MYimk0gGO7xr0ZCkWH4wTA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -261,10 +261,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ChatApp.Lib.Messaging.Persistence.AzureStorageChatMessageRepository.html",
-          "hash": "Qi+/SWVPOYIecTYxryJjrQ=="
+          "hash": "tiTOE01u2uGfru435a/Ghw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -273,10 +273,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ChatApp.Lib.Messaging.Persistence.ChatMessageTableEntity.html",
-          "hash": "HM2kc8ZbyDcjzMVWhy2JIQ=="
+          "hash": "JK2ZDZa/0kGUZteiTzM7yg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -285,10 +285,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ChatApp.Lib.Messaging.Persistence.IChatMessageRepository.html",
-          "hash": "LLkBnrXDuzlw/M4zhAJmAw=="
+          "hash": "jDiotTB7EAzVX8S753Hu8A=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -300,7 +300,7 @@
           "hash": "Xl0SAZRx4DbIkP+4QPBCnQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -309,10 +309,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ChatApp.Lib.Users.Model.User.html",
-          "hash": "w36NLX4LLT2jhHkHc6RQPQ=="
+          "hash": "or7ugARGXBxkcwZFIr4iIg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -324,7 +324,7 @@
           "hash": "PIXZet1eTqwZoD4nOOzS+w=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -333,10 +333,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ChatApp.Lib.Users.Persistence.AzureStorageActiveUserRepository.html",
-          "hash": "mIqU32T4O3BfRiD9m9l+gQ=="
+          "hash": "AyNqi8ldlO4PNtuOBgNbNg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -345,10 +345,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ChatApp.Lib.Users.Persistence.IActiveUserRepository.html",
-          "hash": "RKO9Sx6A+Y9gTmIyJaclbw=="
+          "hash": "QBj9t+PGgWcYrRDToe4tZg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -357,10 +357,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ChatApp.Lib.Users.Persistence.UserTableEntity.html",
-          "hash": "h1Ytr26eL9Tp9LM4pwbY5Q=="
+          "hash": "yLdJnOE9SROV+XNld+Tilw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -372,7 +372,7 @@
           "hash": "UXGrc2P0PnONXPH7uuJiWw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -381,10 +381,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ChatApp.Program.html",
-          "hash": "3ugDqkIyJMTyEI3FmMWzqg=="
+          "hash": "tq4HK8Z41+PuO2/Mpl+tNA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -393,10 +393,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ChatApp.Startup.html",
-          "hash": "nSxH3d2ZhUl/DKfcvzp2Qw=="
+          "hash": "Vs0mULm3QhUAPHs1v527jw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -408,7 +408,7 @@
           "hash": "c+tzaaxfSQQ7p9vg6Wj7gA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -441,10 +441,10 @@
       "output": {
         ".html": {
           "relative_path": "articles/intro.html",
-          "hash": "kxwTarz2EMZU90nUkfbJHg=="
+          "hash": "H7D+u8l6rCnZ43QmFJI7Tg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -453,10 +453,10 @@
       "output": {
         ".html": {
           "relative_path": "articles/task1.html",
-          "hash": "XlNUF+8XOdH+n9QPVqZyTQ=="
+          "hash": "FwXhJw9n/ULeG/dC5SXprg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -465,10 +465,10 @@
       "output": {
         ".html": {
           "relative_path": "articles/task2.html",
-          "hash": "URyd0oocYEQq6HWFs/bFbA=="
+          "hash": "oChZ/0YPGB75m8NQP6sVXg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -492,7 +492,7 @@
           "hash": "yGKD/Vg6Ah4W+dJYr3QtxA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -513,7 +513,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "MiQsK4TC8YeLdXzigZ5LgQ=="
+          "hash": "oPhceiV/cHUmfqiyVfxYFg=="
         }
       },
       "is_incremental": false,

@@ -119,8 +119,13 @@ Also implements <a class="xref" href="ChatApp.Lib.General.IInitializable.html">I
   </div>
   <h3 id="constructors">Constructors
   </h3>
-  
-  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Tuosaari/chatapp/new/master/apiSpec/new?filename=ChatApp_Lib_Azure_Storage_TableStorageClient__ctor_ChatApp_Lib_Azure_Storage_TableStorageClientOptions_.md&amp;value=---%0Auid%3A%20ChatApp.Lib.Azure.Storage.TableStorageClient.%23ctor(ChatApp.Lib.Azure.Storage.TableStorageClientOptions)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Tuosaari/chatapp/blob/master/src/ChatApp.Lib/Azure/Storage/TableStorageClient.cs/#L51">View Source</a>
+  </span>
   <a id="ChatApp_Lib_Azure_Storage_TableStorageClient__ctor_" data-uid="ChatApp.Lib.Azure.Storage.TableStorageClient.#ctor*"></a>
   <h4 id="ChatApp_Lib_Azure_Storage_TableStorageClient__ctor_ChatApp_Lib_Azure_Storage_TableStorageClientOptions_" data-uid="ChatApp.Lib.Azure.Storage.TableStorageClient.#ctor(ChatApp.Lib.Azure.Storage.TableStorageClientOptions)">TableStorageClient(TableStorageClientOptions)</h4>
   <div class="markdown level1 summary"></div>
@@ -148,16 +153,21 @@ Also implements <a class="xref" href="ChatApp.Lib.General.IInitializable.html">I
   </table>
   <h3 id="methods">Methods
   </h3>
-  
-  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Tuosaari/chatapp/new/master/apiSpec/new?filename=ChatApp_Lib_Azure_Storage_TableStorageClient_GetAll__1_System_Int32_.md&amp;value=---%0Auid%3A%20ChatApp.Lib.Azure.Storage.TableStorageClient.GetAll%60%601(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Tuosaari/chatapp/blob/master/src/ChatApp.Lib/Azure/Storage/TableStorageClient.cs/#L89">View Source</a>
+  </span>
   <a id="ChatApp_Lib_Azure_Storage_TableStorageClient_GetAll_" data-uid="ChatApp.Lib.Azure.Storage.TableStorageClient.GetAll*"></a>
   <h4 id="ChatApp_Lib_Azure_Storage_TableStorageClient_GetAll__1_System_Int32_" data-uid="ChatApp.Lib.Azure.Storage.TableStorageClient.GetAll``1(System.Int32)">GetAll&lt;T&gt;(Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Get all <span class="xref">Microsoft.WindowsAzure.Storage.Table.ITableEntity</span> in table</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public Task&lt;IEnumerable&lt;T&gt;&gt; GetAll&lt;T&gt;(int maxCount = 0)
-
     where T : ITableEntity, new()</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -173,7 +183,8 @@ Also implements <a class="xref" href="ChatApp.Lib.General.IInitializable.html">I
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">maxCount</span></td>
-        <td></td>
+        <td><p>Maximum count of entities to return, set to 0 to retrieve all. Defaults to 0</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -188,7 +199,8 @@ Also implements <a class="xref" href="ChatApp.Lib.General.IInitializable.html">I
     <tbody>
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Collections.Generic.IEnumerable</span>&lt;T&gt;&gt;</td>
-        <td></td>
+        <td><p><span class="xref">System.Collections.Generic.IEnumerable`1</span> containing all entities in table</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -203,20 +215,26 @@ Also implements <a class="xref" href="ChatApp.Lib.General.IInitializable.html">I
     <tbody>
       <tr>
         <td><span class="parametername">T</span></td>
-        <td></td>
+        <td><p>Type of the <span class="xref">Microsoft.WindowsAzure.Storage.Table.ITableEntity</span> to get</p>
+</td>
       </tr>
     </tbody>
   </table>
-  
-  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Tuosaari/chatapp/new/master/apiSpec/new?filename=ChatApp_Lib_Azure_Storage_TableStorageClient_GetByPartitionAndRowKey__1_System_String_System_String_.md&amp;value=---%0Auid%3A%20ChatApp.Lib.Azure.Storage.TableStorageClient.GetByPartitionAndRowKey%60%601(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Tuosaari/chatapp/blob/master/src/ChatApp.Lib/Azure/Storage/TableStorageClient.cs/#L77">View Source</a>
+  </span>
   <a id="ChatApp_Lib_Azure_Storage_TableStorageClient_GetByPartitionAndRowKey_" data-uid="ChatApp.Lib.Azure.Storage.TableStorageClient.GetByPartitionAndRowKey*"></a>
   <h4 id="ChatApp_Lib_Azure_Storage_TableStorageClient_GetByPartitionAndRowKey__1_System_String_System_String_" data-uid="ChatApp.Lib.Azure.Storage.TableStorageClient.GetByPartitionAndRowKey``1(System.String,System.String)">GetByPartitionAndRowKey&lt;T&gt;(String, String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Get <span class="xref">Microsoft.WindowsAzure.Storage.Table.ITableEntity</span> by partition and row key</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public Task&lt;T&gt; GetByPartitionAndRowKey&lt;T&gt;(string partitionKey, string rowKey)
-
     where T : ITableEntity, new()</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -232,12 +250,14 @@ Also implements <a class="xref" href="ChatApp.Lib.General.IInitializable.html">I
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">partitionKey</span></td>
-        <td></td>
+        <td><p>Partition key to query with</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">rowKey</span></td>
-        <td></td>
+        <td><p>Row key to query with</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -252,7 +272,8 @@ Also implements <a class="xref" href="ChatApp.Lib.General.IInitializable.html">I
     <tbody>
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span>&lt;T&gt;</td>
-        <td></td>
+        <td><p><span class="xref">Microsoft.WindowsAzure.Storage.Table.ITableEntity</span> matching the query or null if entity was not found</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -267,20 +288,26 @@ Also implements <a class="xref" href="ChatApp.Lib.General.IInitializable.html">I
     <tbody>
       <tr>
         <td><span class="parametername">T</span></td>
-        <td></td>
+        <td><p>Type of the <span class="xref">Microsoft.WindowsAzure.Storage.Table.ITableEntity</span> to get</p>
+</td>
       </tr>
     </tbody>
   </table>
-  
-  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Tuosaari/chatapp/new/master/apiSpec/new?filename=ChatApp_Lib_Azure_Storage_TableStorageClient_GetByPartitionKey__1_System_String_.md&amp;value=---%0Auid%3A%20ChatApp.Lib.Azure.Storage.TableStorageClient.GetByPartitionKey%60%601(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Tuosaari/chatapp/blob/master/src/ChatApp.Lib/Azure/Storage/TableStorageClient.cs/#L68">View Source</a>
+  </span>
   <a id="ChatApp_Lib_Azure_Storage_TableStorageClient_GetByPartitionKey_" data-uid="ChatApp.Lib.Azure.Storage.TableStorageClient.GetByPartitionKey*"></a>
   <h4 id="ChatApp_Lib_Azure_Storage_TableStorageClient_GetByPartitionKey__1_System_String_" data-uid="ChatApp.Lib.Azure.Storage.TableStorageClient.GetByPartitionKey``1(System.String)">GetByPartitionKey&lt;T&gt;(String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Get <span class="xref">System.Collections.Generic.IEnumerable`1</span> by partition key</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public Task&lt;IEnumerable&lt;T&gt;&gt; GetByPartitionKey&lt;T&gt;(string partitionKey)
-
     where T : ITableEntity, new()</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -296,7 +323,8 @@ Also implements <a class="xref" href="ChatApp.Lib.General.IInitializable.html">I
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">partitionKey</span></td>
-        <td></td>
+        <td><p>Partition key to query with</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -311,7 +339,8 @@ Also implements <a class="xref" href="ChatApp.Lib.General.IInitializable.html">I
     <tbody>
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Collections.Generic.IEnumerable</span>&lt;T&gt;&gt;</td>
-        <td></td>
+        <td><p><span class="xref">System.Collections.Generic.IEnumerable`1</span> containing all entities with given partition key</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -326,12 +355,18 @@ Also implements <a class="xref" href="ChatApp.Lib.General.IInitializable.html">I
     <tbody>
       <tr>
         <td><span class="parametername">T</span></td>
-        <td></td>
+        <td><p>Type of the <span class="xref">Microsoft.WindowsAzure.Storage.Table.ITableEntity</span> to get</p>
+</td>
       </tr>
     </tbody>
   </table>
-  
-  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Tuosaari/chatapp/new/master/apiSpec/new?filename=ChatApp_Lib_Azure_Storage_TableStorageClient_Initialize.md&amp;value=---%0Auid%3A%20ChatApp.Lib.Azure.Storage.TableStorageClient.Initialize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Tuosaari/chatapp/blob/master/src/ChatApp.Lib/Azure/Storage/TableStorageClient.cs/#L133">View Source</a>
+  </span>
   <a id="ChatApp_Lib_Azure_Storage_TableStorageClient_Initialize_" data-uid="ChatApp.Lib.Azure.Storage.TableStorageClient.Initialize*"></a>
   <h4 id="ChatApp_Lib_Azure_Storage_TableStorageClient_Initialize" data-uid="ChatApp.Lib.Azure.Storage.TableStorageClient.Initialize">Initialize()</h4>
   <div class="markdown level1 summary"></div>
@@ -355,11 +390,17 @@ Also implements <a class="xref" href="ChatApp.Lib.General.IInitializable.html">I
       </tr>
     </tbody>
   </table>
-  
-  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Tuosaari/chatapp/new/master/apiSpec/new?filename=ChatApp_Lib_Azure_Storage_TableStorageClient_InsertOrReplace_Microsoft_WindowsAzure_Storage_Table_ITableEntity_.md&amp;value=---%0Auid%3A%20ChatApp.Lib.Azure.Storage.TableStorageClient.InsertOrReplace(Microsoft.WindowsAzure.Storage.Table.ITableEntity)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Tuosaari/chatapp/blob/master/src/ChatApp.Lib/Azure/Storage/TableStorageClient.cs/#L58">View Source</a>
+  </span>
   <a id="ChatApp_Lib_Azure_Storage_TableStorageClient_InsertOrReplace_" data-uid="ChatApp.Lib.Azure.Storage.TableStorageClient.InsertOrReplace*"></a>
   <h4 id="ChatApp_Lib_Azure_Storage_TableStorageClient_InsertOrReplace_Microsoft_WindowsAzure_Storage_Table_ITableEntity_" data-uid="ChatApp.Lib.Azure.Storage.TableStorageClient.InsertOrReplace(Microsoft.WindowsAzure.Storage.Table.ITableEntity)">InsertOrReplace(ITableEntity)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Insert or replace <span class="xref">Microsoft.WindowsAzure.Storage.Table.ITableEntity</span> in the table</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -378,7 +419,8 @@ Also implements <a class="xref" href="ChatApp.Lib.General.IInitializable.html">I
       <tr>
         <td><span class="xref">Microsoft.WindowsAzure.Storage.Table.ITableEntity</span></td>
         <td><span class="parametername">entity</span></td>
-        <td></td>
+        <td><p><span class="xref">Microsoft.WindowsAzure.Storage.Table.ITableEntity</span> to insert or replace</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -397,11 +439,17 @@ Also implements <a class="xref" href="ChatApp.Lib.General.IInitializable.html">I
       </tr>
     </tbody>
   </table>
-  
-  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Tuosaari/chatapp/new/master/apiSpec/new?filename=ChatApp_Lib_Azure_Storage_TableStorageClient_RemoveAll.md&amp;value=---%0Auid%3A%20ChatApp.Lib.Azure.Storage.TableStorageClient.RemoveAll%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Tuosaari/chatapp/blob/master/src/ChatApp.Lib/Azure/Storage/TableStorageClient.cs/#L124">View Source</a>
+  </span>
   <a id="ChatApp_Lib_Azure_Storage_TableStorageClient_RemoveAll_" data-uid="ChatApp.Lib.Azure.Storage.TableStorageClient.RemoveAll*"></a>
   <h4 id="ChatApp_Lib_Azure_Storage_TableStorageClient_RemoveAll" data-uid="ChatApp.Lib.Azure.Storage.TableStorageClient.RemoveAll">RemoveAll()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Clear table by removing all entities in it. Note: Does not remove the table</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -422,16 +470,21 @@ Also implements <a class="xref" href="ChatApp.Lib.General.IInitializable.html">I
       </tr>
     </tbody>
   </table>
-  
-  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Tuosaari/chatapp/new/master/apiSpec/new?filename=ChatApp_Lib_Azure_Storage_TableStorageClient_RemoveEntity__1_System_String_System_String_.md&amp;value=---%0Auid%3A%20ChatApp.Lib.Azure.Storage.TableStorageClient.RemoveEntity%60%601(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Tuosaari/chatapp/blob/master/src/ChatApp.Lib/Azure/Storage/TableStorageClient.cs/#L111">View Source</a>
+  </span>
   <a id="ChatApp_Lib_Azure_Storage_TableStorageClient_RemoveEntity_" data-uid="ChatApp.Lib.Azure.Storage.TableStorageClient.RemoveEntity*"></a>
   <h4 id="ChatApp_Lib_Azure_Storage_TableStorageClient_RemoveEntity__1_System_String_System_String_" data-uid="ChatApp.Lib.Azure.Storage.TableStorageClient.RemoveEntity``1(System.String,System.String)">RemoveEntity&lt;T&gt;(String, String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Remove single <span class="xref">Microsoft.WindowsAzure.Storage.Table.ITableEntity</span> specified by partition and row key</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public Task&lt;T&gt; RemoveEntity&lt;T&gt;(string partitionKey, string rowKey)
-
     where T : ITableEntity, new()</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -447,12 +500,14 @@ Also implements <a class="xref" href="ChatApp.Lib.General.IInitializable.html">I
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">partitionKey</span></td>
-        <td></td>
+        <td><p>Partition key to use in delete</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">rowKey</span></td>
-        <td></td>
+        <td><p>Row key to use in delete</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -467,7 +522,8 @@ Also implements <a class="xref" href="ChatApp.Lib.General.IInitializable.html">I
     <tbody>
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span>&lt;T&gt;</td>
-        <td></td>
+        <td><p>Removed <span class="xref">Microsoft.WindowsAzure.Storage.Table.ITableEntity</span> or null, if entity was not found</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -482,7 +538,8 @@ Also implements <a class="xref" href="ChatApp.Lib.General.IInitializable.html">I
     <tbody>
       <tr>
         <td><span class="parametername">T</span></td>
-        <td></td>
+        <td><p>Type of the <span class="xref">Microsoft.WindowsAzure.Storage.Table.ITableEntity</span> to get</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -500,6 +557,12 @@ Also implements <a class="xref" href="ChatApp.Lib.General.IInitializable.html">I
             <div class="sideaffix">
               <div class="contribution">
                 <ul class="nav">
+                  <li>
+                    <a href="https://github.com/Tuosaari/chatapp/new/master/apiSpec/new?filename=ChatApp_Lib_Azure_Storage_TableStorageClient.md&amp;value=---%0Auid%3A%20ChatApp.Lib.Azure.Storage.TableStorageClient%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Tuosaari/chatapp/blob/master/src/ChatApp.Lib/Azure/Storage/TableStorageClient.cs/#L26" class="contribution-link">View Source</a>
+                  </li>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
