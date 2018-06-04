@@ -1,0 +1,30 @@
+﻿[
+  {
+    "outputFileName": "wwwroot/dist/vendor.min.css",
+    "inputFiles": [
+      "wwwroot/dist/vendor.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/dist/main.min.js",
+    "inputFiles": [
+      "wwwroot/dist/main.js"
+    ],
+    "minify": {
+      "enabled": true,
+      "renameLocals": true
+    },
+    "sourceMap": false
+  },
+  {
+    "outputFileName": "wwwroot/dist/vendor.min.js",
+    "inputFiles": [
+      "wwwroot/dist/vendor.js"
+    ],
+    "minify": {
+      "enabled": true,
+      "renameLocals": true
+    },
+    "sourceMap": false
+  }
+]

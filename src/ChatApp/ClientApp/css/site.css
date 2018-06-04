@@ -1,0 +1,109 @@
+html, body {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.app-container {
+    height: 100%;
+    width: 100%;
+}
+
+.main-container {
+    height: 100%;
+    width: 100%;
+}
+
+.loading-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CHAT */
+.chat-container {
+    height: 100%;
+    width: 100%;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+/* REGISTER */
+.register-container {
+    margin-top: 150px;
+    width: 100%;
+}
+
+.register-entry {
+    width: 100%;
+    max-width: 500px;
+    max-height: 400px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.register-entry h1 {
+    margin: auto;
+    padding-bottom: 50px;
+    font-weight: 300
+}
+
+.register-button {
+    width: 100%;
+    background-color: #394658;
+}
+
+/* ACTIVE USERS */
+.active-users-container {
+    height: 100%;
+    min-width: 300px;
+    color: #b7bdc4;
+    background-color: #394658;
+    padding: 15px;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.active-users-list {
+    overflow: auto;
+    flex-grow: 1;
+}
+
+.active-users-list-item {
+    padding-left: 15px;
+}
+
+.active-users-self {
+    font-size: 22px;
+    height: 50px;
+}
+
+.active-users-self-icon {
+    font-size: 32px;
+    height: 50px;
+    padding: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* MESSAGE LIST */
+.message-list-container {
+    flex-grow: 1;
+    padding: 15px;
+}
+
+.message-list {
+    font-size: 18px;
+    overflow: auto;
+    flex-grow: 1;
+}
