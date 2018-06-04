@@ -1,0 +1,126 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Task 1 - SignalR based chat </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Task 1 - SignalR based chat ">
+    <meta name="generator" content="docfx 2.36.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="task-1---signalr-based-chat">Task 1 - SignalR based chat</h1>
+
+<p>Goal was to make a simple chat using SignalR Core and ASP.NET Core web site</p>
+<h2 id="model">Model</h2>
+<p>Only requirements for system were to show all active users, broadcast messages send by users for all to see and support message persistence. Due to this, the domain model for the system is fairly simple and small. Users have Id and Handle (nickname) and messages consist of Id, Handle (handle of the user who sent the message), timestamp (generated at server side) and the actual message text.</p>
+<h2 id="general-architecture">General architecture</h2>
+<p>Backend system consist mostly of two layers, application layer and data access layer. Business layer/services were left out, for all commands originating from application layer would simply be pass through calls for services.</p>
+<p>Application layer is very simple and consists of SignalR hub for basic chat functionality and api controllers for message history and active user fetching. SignalR has no backplane installed hence multiple servers are a no go. This would be a clear next step to make the system scale better.</p>
+<p>Data access layer is described more in detail in storage section.</p>
+<h2 id="storage">Storage</h2>
+<p>Using Azure storage for chat message persistence was required by the task. Table storage was chosen over blob storage due to it having crude indexing capabilities which are enough for the chat system. &quot;Inversed&quot; timestamp (long.maxvalue - timestamp.ticks) row key for chat messages is used to guarantee messages are fetched in order automatically. Additionaly user and message models are simple enough to be stored as TableEntity without any custom functionality.</p>
+<p>Table storage access is hidden behind repository interfaces used in application layer. Both active users and messages have a simple repository interface for functionality required by the system. If channels, authentication and authorization were needed, these would probably be hidden behind a service layer which in turn would be used by application layer. A simple generic table client was implemented for basic CRUD operations against a single table. Both user and message repositories use that client. This allowed repositories to be a bit more testable and the more &quot;complex&quot; table storage related code was reused.</p>
+<p>For storage configuration Options-pattern is used and configuration values are injected to clients as strongly typed objects.</p>
+<h2 id="front-end">Front End</h2>
+<p>Front end is based loosely on ASP.NET Core React template with Webpack for building, bundling and minification. Front end is entirely coded in TypeScript and React. I'm by no means a react professional, so some patterns (like chat service) propably go against the React ideology.</p>
+<p>For UI styling, Bootstrap 4 was chosen. Only because I've been using it recently. Definetly not the best/prettiest toolkit to use, but saved me some time.</p>
+<p>In general, having had a bit more time, front-end would/should have seen more love.</p>
+<h2 id="documentation">Documentation</h2>
+<p>For documentation, DocFX is used. Haven't been responsible for choosing documentation layer for a while, but after some googling and testing, DocFX seems to be a solid tool for .net documentation. Articles are in markdown and API/Code documentation is based on C# xml &quot;triple slash&quot; comments. Web site generated by the tool is hosted as part of the chat application for simplicity. All in all, pretty happy with the tool and will probably use it in personal project from now on.</p>
+<h2 id="deployment">Deployment</h2>
+<p>A simple PowerShell script <code>deploy.ps1</code> based on Microsoft samples was made to setup continuous github deployment and free tier web app initialization.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

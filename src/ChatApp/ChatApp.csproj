@@ -26,6 +26,7 @@
 
   <ItemGroup>
     <Folder Include="ClientApp\containers\" />
+    <Folder Include="wwwroot\documentation\" />
   </ItemGroup>
 
   <ItemGroup>

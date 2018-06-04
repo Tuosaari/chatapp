@@ -1,0 +1,572 @@
+{
+  "homepages": [],
+  "source_base_path": "C:/Repos/ChatApp",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Conceptual",
+      "source_relative_path": "README.md",
+      "output": {
+        ".html": {
+          "relative_path": "README.html",
+          "hash": "XLpIZpxCkXaKUFZrSIq+Ww=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ChatApp.Configuration.DependencyConfiguration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ChatApp.Configuration.DependencyConfiguration.html",
+          "hash": "TPvUUV8P52T6p0d5w+03WQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ChatApp.Configuration.ServiceInitialization.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ChatApp.Configuration.ServiceInitialization.html",
+          "hash": "3svLS4XAY/jQNl6XOoUdag=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ChatApp.Configuration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ChatApp.Configuration.html",
+          "hash": "meqAcmTXx6fqSOJ9l19hhQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ChatApp.Controllers.Api.ActiveUsersController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ChatApp.Controllers.Api.ActiveUsersController.html",
+          "hash": "fWADWOiPQOJecpzkQ6Vqmw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ChatApp.Controllers.Api.MessageController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ChatApp.Controllers.Api.MessageController.html",
+          "hash": "rrECwfCUNvsXTmQSEtlldg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ChatApp.Controllers.Api.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ChatApp.Controllers.Api.html",
+          "hash": "r3ZKeThFf3I5x7iNUYXy9w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ChatApp.Controllers.HomeController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ChatApp.Controllers.HomeController.html",
+          "hash": "Eynbl+gvt4mZWwOZyh4qiw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ChatApp.Controllers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ChatApp.Controllers.html",
+          "hash": "p0h3zuMmPMYr3bn+28FwFQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ChatApp.Exceptions.ChatHubException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ChatApp.Exceptions.ChatHubException.html",
+          "hash": "+Pac6Iqcf34I+S7VQUzrQA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ChatApp.Exceptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ChatApp.Exceptions.html",
+          "hash": "8cWeS7wShhk6sNNwHOgF/A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ChatApp.Hubs.ChatHub.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ChatApp.Hubs.ChatHub.html",
+          "hash": "1nQYjThfaLX+0RgaaIYPmg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ChatApp.Hubs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ChatApp.Hubs.html",
+          "hash": "W0YGQDJtMe+OMWV5zhFguA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ChatApp.Lib.Azure.Storage.ITableStorageClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ChatApp.Lib.Azure.Storage.ITableStorageClient.html",
+          "hash": "hU2w9mvCHAC2rFKtr7OIXw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ChatApp.Lib.Azure.Storage.TableStorageClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ChatApp.Lib.Azure.Storage.TableStorageClient.html",
+          "hash": "gWTNdi7EY/SmYhLIqjEMHg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ChatApp.Lib.Azure.Storage.TableStorageClientOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ChatApp.Lib.Azure.Storage.TableStorageClientOptions.html",
+          "hash": "ICLPANPGtqZADxyM7F5V5A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ChatApp.Lib.Azure.Storage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ChatApp.Lib.Azure.Storage.html",
+          "hash": "yyhgvzFiBp0fcikEGA0dEQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ChatApp.Lib.General.IInitializable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ChatApp.Lib.General.IInitializable.html",
+          "hash": "FpYQhVl6rKgSoyWvu4TwqQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ChatApp.Lib.General.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ChatApp.Lib.General.html",
+          "hash": "QugpkD5jE6koLsyXeF+6lg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ChatApp.Lib.Messaging.Model.ChatMessage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ChatApp.Lib.Messaging.Model.ChatMessage.html",
+          "hash": "OSRPMQ7NhW4KrlrSXSEU1w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ChatApp.Lib.Messaging.Model.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ChatApp.Lib.Messaging.Model.html",
+          "hash": "MYimk0gGO7xr0ZCkWH4wTA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ChatApp.Lib.Messaging.Persistence.AzureStorageChatMessageRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ChatApp.Lib.Messaging.Persistence.AzureStorageChatMessageRepository.html",
+          "hash": "Qi+/SWVPOYIecTYxryJjrQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ChatApp.Lib.Messaging.Persistence.ChatMessageTableEntity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ChatApp.Lib.Messaging.Persistence.ChatMessageTableEntity.html",
+          "hash": "HM2kc8ZbyDcjzMVWhy2JIQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ChatApp.Lib.Messaging.Persistence.IChatMessageRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ChatApp.Lib.Messaging.Persistence.IChatMessageRepository.html",
+          "hash": "LLkBnrXDuzlw/M4zhAJmAw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ChatApp.Lib.Messaging.Persistence.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ChatApp.Lib.Messaging.Persistence.html",
+          "hash": "Xl0SAZRx4DbIkP+4QPBCnQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ChatApp.Lib.Users.Model.User.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ChatApp.Lib.Users.Model.User.html",
+          "hash": "w36NLX4LLT2jhHkHc6RQPQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ChatApp.Lib.Users.Model.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ChatApp.Lib.Users.Model.html",
+          "hash": "PIXZet1eTqwZoD4nOOzS+w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ChatApp.Lib.Users.Persistence.AzureStorageActiveUserRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ChatApp.Lib.Users.Persistence.AzureStorageActiveUserRepository.html",
+          "hash": "mIqU32T4O3BfRiD9m9l+gQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ChatApp.Lib.Users.Persistence.IActiveUserRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ChatApp.Lib.Users.Persistence.IActiveUserRepository.html",
+          "hash": "RKO9Sx6A+Y9gTmIyJaclbw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ChatApp.Lib.Users.Persistence.UserTableEntity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ChatApp.Lib.Users.Persistence.UserTableEntity.html",
+          "hash": "h1Ytr26eL9Tp9LM4pwbY5Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ChatApp.Lib.Users.Persistence.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ChatApp.Lib.Users.Persistence.html",
+          "hash": "UXGrc2P0PnONXPH7uuJiWw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ChatApp.Program.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ChatApp.Program.html",
+          "hash": "3ugDqkIyJMTyEI3FmMWzqg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ChatApp.Startup.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ChatApp.Startup.html",
+          "hash": "nSxH3d2ZhUl/DKfcvzp2Qw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ChatApp.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ChatApp.html",
+          "hash": "c+tzaaxfSQQ7p9vg6Wj7gA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html",
+          "hash": "OxsqN4CDdoIYjZ6lNuLSrg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "+K+qj8pEm4klqJF3W5ikZw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/intro.html",
+          "hash": "kxwTarz2EMZU90nUkfbJHg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/task1.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/task1.html",
+          "hash": "XlNUF+8XOdH+n9QPVqZyTQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/task2.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/task2.html",
+          "hash": "URyd0oocYEQq6HWFs/bFbA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/task3.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/task3.html",
+          "hash": "WsdRO1liU3dmPpTy5J8JKw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/task4.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/task4.html",
+          "hash": "yGKD/Vg6Ah4W+dJYr3QtxA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "articles/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "articles/toc.html",
+          "hash": "Zq0pExkIQ8NitW6PUBZ84A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "MiQsK4TC8YeLdXzigZ5LgQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "ob7LqWp4kTNLz+9W4omdTw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": true,
+        "incrementalPhase": "build"
+      },
+      "processors": {
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "ConceptualDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build"
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build"
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": true,
+        "details": "Can support incremental post processing.",
+        "incrementalPhase": "postProcessing"
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
