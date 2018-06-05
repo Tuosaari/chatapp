@@ -72,6 +72,7 @@
 <p>Goal was to convert app to be deployable to service fabric cluster</p>
 <h2 id="conversion">Conversion</h2>
 <p>Final result can be seen in branch &quot;SFConversion&quot;. Service Fabric application was done by adding service fabric application to the solution and adding web site as existing service to it.</p>
+<p>Web site was converted to build an .exe instead of .dll (by introducing runtime identifier for the project). Main function was altered to initialize Kestrel to work in Service Fabric environment and basic settings and manifest files were added. Additionally appsettings.json loading was added as part of startup as secrects were no longer available. In production configuration would probably move to Key Vault.</p>
 </article>
           </div>
           
@@ -79,6 +80,9 @@
             <div class="sideaffix">
               <div class="contribution">
                 <ul class="nav">
+                  <li>
+                    <a href="https://github.com/Tuosaari/chatapp/blob/master/articles/task3.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">

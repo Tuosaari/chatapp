@@ -99,6 +99,7 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">Task&lt;IEnumerable&lt;T&gt;&gt; GetAll&lt;T&gt;(int maxCount = 0)
+
     where T : ITableEntity, new()</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -166,6 +167,7 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">Task&lt;T&gt; GetByPartitionAndRowKey&lt;T&gt;(string partitionKey, string rowKey)
+
     where T : ITableEntity, new()</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -239,6 +241,7 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">Task&lt;IEnumerable&lt;T&gt;&gt; GetByPartitionKey&lt;T&gt;(string partitionKey)
+
     where T : ITableEntity, new()</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -386,6 +389,7 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">Task&lt;T&gt; RemoveEntity&lt;T&gt;(string partitionKey, string rowKey)
+
     where T : ITableEntity, new()</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>

@@ -28,7 +28,7 @@ export class MessageListContainer extends React.Component<MessageListContainerPr
 
     componentDidMount() {
         this.props.chatService.getMessages().then((messages) => {
-            this.setState({messages: messages.reverse(), loading: false})
+            this.setState({messages: messages.reverse().concat(this.state.messages), loading: false})
         });
         this.props.chatService.registerMessageListener(this.onMessage);
         this.props.chatService.registerNewUserListener(this.onNewUser);

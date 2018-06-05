@@ -5,13 +5,17 @@ Goal was to make a simple chat using SignalR Core and ASP.NET Core web site
 
 ## Model
 
-Only requirements for system were to show all active users, broadcast messages send by users for all to see and support message persistence. Due to this, the domain model for the system is fairly simple and small. Users have Id and Handle (nickname) and messages consist of Id, Handle (handle of the user who sent the message), timestamp (generated at server side) and the actual message text.
+Only requirements for the system were to show all active users, broadcast messages send by users for all to see and support message persistence. Due to this, the domain model for the system is fairly simple and small. Users have Id and Handle (nickname) and messages consist of Id, Handle (handle of the user who sent the message), timestamp (generated at server side) and the actual message text.
 
 ## General architecture
 
 Backend system consist mostly of two layers, application layer and data access layer. Business layer/services were left out, for all commands originating from application layer would simply be pass through calls for services.
 
 Application layer is very simple and consists of SignalR hub for basic chat functionality and api controllers for message history and active user fetching. SignalR has no backplane installed hence multiple servers are a no go. This would be a clear next step to make the system scale better.
+
+Lib uses feature based folder structure, and moving on UI and application layer should too. I much prefer feature based structure over role based, even in smaller applications such as this.
+
+One-time initialization (such as table generation) is done by implementing a simple IInitializable interface. All instances registered with that interface have their initialize function called once during application start-up.
 
 Data access layer is described more in detail in storage section.
 
@@ -21,13 +25,17 @@ Using Azure storage for chat message persistence was required by the task. Table
 
 Table storage access is hidden behind repository interfaces used in application layer. Both active users and messages have a simple repository interface for functionality required by the system. If channels, authentication and authorization were needed, these would probably be hidden behind a service layer which in turn would be used by application layer. A simple generic table client was implemented for basic CRUD operations against a single table. Both user and message repositories use that client. This allowed repositories to be a bit more testable and the more "complex" table storage related code was reused.
 
+Active users could have been stored as, for example, concurrent dictionary in the hub it self. However, using storage allows for a bit easier transition to multiple servers if a SignalR backplane would eventually be introduced.
+
 For storage configuration Options-pattern is used and configuration values are injected to clients as strongly typed objects.
 
 ## Front End
 
-Front end is based loosely on ASP.NET Core React template with Webpack for building, bundling and minification. Front end is entirely coded in TypeScript and React. I'm by no means a react professional, so some patterns (like chat service) propably go against the React ideology.
+Front end is based loosely on ASP.NET Core React template with Webpack for building, bundling and minification. Front end is entirely coded in TypeScript and React. I'm by no means a react professional, so some patterns (like chat service) propably go against the React ideology. Containers are used to hide data access from components, which in turn only provide simple rendering tasks. For future development, redux would be a perfect fit for a chat app and would better hide services and actual data access.
 
-For UI styling, Bootstrap 4 was chosen. Only because I've been using it recently. Definetly not the best/prettiest toolkit to use, but saved me some time.
+Minification is done with Webpack (and uglify) on production build. No separate .min.js/css files are generated, but normal bundles are minified in production build instead. This, in my opinion, simplifies the layout and script inclusion.
+
+For UI styling, Bootstrap 4 was chosen. Only because I've been using it recently. Definetly not the best/prettiest toolkit to use, but saved me some time. 
 
 In general, having had a bit more time, front-end would/should have seen far more love.
 
@@ -37,4 +45,4 @@ For documentation, DocFX is used. Haven't been responsible for choosing document
 
 ## Deployment
 
-A simple PowerShell script `deploy.ps1` based on Microsoft samples was made to setup continuous github deployment and free tier web app initialization.
+A simple PowerShell script `deploy.ps1` based on Microsoft samples was made to setup continuous github deployment and free tier web app initialization. This I had some trouble with during initial run when it failed to configure automatic deployment, but did create the app and other resources.
